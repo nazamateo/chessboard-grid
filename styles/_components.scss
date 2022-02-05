@@ -1,0 +1,74 @@
+$font-nav: 'Roboto Mono',
+monospace;
+$nav-size: 25px;
+$primary-color: snow;
+$secondary-color:black;
+$tertiary-color: #0b5a1f;
+$full:100%;
+$half:50%;
+
+
+body {
+    width: $full;
+    height: $full;
+    overflow: hidden;
+    background-color: rgb(230,230,230);
+
+    .main {
+        display: block;
+        background-image: url(images/bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+
+        .title {
+            display: flex;
+            justify-content: center;
+            width: $full;
+            font-family: $font-nav;
+        }
+
+        .chessboard {
+            border-radius: 60px;
+    
+            .board {
+                margin: auto;
+                height: 70vw;
+                width: 70vw;
+                max-width: 70vh;
+                max-height: 70vh;
+                display: grid;
+                grid-template-columns: repeat(8, 8.75vh);
+                grid-template-rows:  repeat(8, 8.75vh);
+                justify-items: stretch;
+                justify-content: stretch;
+                
+
+
+
+                .white {
+                    background-color: #EEEED2;
+                    color: black;
+                    font-size: 5vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+
+                .black {
+                    background-color: #769656;
+                    color: black;
+                    display: flex;
+                    font-size: 5vh;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+
+
+}
